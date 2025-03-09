@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .designation {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #e0e0e0;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Lalitha" alt="Lalitha Bhuvaneshwari" class="profile-pic">
+        <div class="name">Lalitha Bhuvaneshwari</div>
+        <div class="designation">Software Engineer</div>
+        <div class="bio">Passionate about coding, AI, and web development.</div>
+        
+        <div class="social-icons">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/lalitha-bhuvaneshwari-613057252/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <!-- HackerRank -->
+            <a href="https://www.hackerrank.com/profile/ulisettilalitha9" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/hackerrank.svg" alt="HackerRank">
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/cdsbhuvana/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leetcode.svg" alt="LeetCode">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
