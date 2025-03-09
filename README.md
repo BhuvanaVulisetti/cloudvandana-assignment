@@ -21,5 +21,3 @@ This repository contains multiple small projects, including:
 - **Backend**: Java
 - **Version Control**: Git & GitHub
 
-## 📂 Folder Structure
-Image Slider/ ├── index.html ├── script.js ├── styles.css ├── AnagramCheck.java ├── EmployeeManagement.java ├── ToDoList/ │ ├── index.html │ ├── script.js ├── README.md
